@@ -1,0 +1,142 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.background {
+  background-image: url('background-food.jpg'); /* Background food image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #FFD700; /* Gold color for hover effect */
+}
+
+.search-box {
+  display: flex;
+  gap: 5px;
+}
+
+.search-box input[type="text"] {
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+}
+
+.search-box button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #FFD700;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #FFA500; /* Darker shade on hover */
+}
+
+/* Main Content */
+.container {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vision h3 {
+  font-size: 1.5em;
+}
+
+.vision p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #ddd;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-note {
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 0.9em;
+}
