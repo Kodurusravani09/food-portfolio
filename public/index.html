@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="food.png" type="image/png"/>
+
 </head>
 <body>
   <div class="background">
     <!-- Navigation Bar -->
     <nav class="navbar">
-      <ul>
+      <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="login.html">Login</a></li>
         <li><a href="#">Contact Us</a></li>
@@ -19,7 +22,7 @@
         <li><a href="#">Feedback</a></li>
       </ul>
       <div class="search-box">
-        <input type="text" id="search" placeholder="Search your favorite food...">
+        <input type="text" id="search" placeholder="Search your favorite food..." aria-label="Search">
         <button type="button">Search</button>
       </div>
     </nav>
@@ -27,6 +30,7 @@
     <!-- Main Content -->
     <div class="container">
       <h1>Food Portfolio</h1>
+      <p>Discover a world of flavors and indulge in a variety of cuisines curated just for you.</p>
       <div id="food-list" class="food-list"></div>
     </div>
 
@@ -38,9 +42,15 @@
           <p>To offer the best food experience, crafted with passion and dedication.</p>
         </div>
         <div class="social-media">
-          <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram" class="icon"></a>
-          <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter" class="icon"></a>
-          <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook" class="icon"></a>
+          <a href="https://www.instagram.com/sravani017/" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
         </div>
       </div>
       <p class="footer-note">© 2023 Food Portfolio. All rights reserved.</p>
