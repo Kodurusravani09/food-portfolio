@@ -28,6 +28,7 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /*adjusted item alignment to allow stacking on smaller screens */
 }
 
 .navbar ul {
@@ -139,4 +140,83 @@ h1 {
   margin-top: 20px;
   color: #aaa;
   font-size: 0.9em;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack navbar items */
+    gap: 10px; /* Smaller gap on mobile */
+  }
+
+  .search-box {
+    flex-direction: column; /* Stack search input and button */
+  }
+
+  .search-box input[type="text"] {
+    width: 100%; /* Full width input */
+  }
+
+  .container {
+    width: 90%; /* Adjust container width */
+    margin-top: 30px; /* Reduce margin */
+  }
+
+  h1 {
+    font-size: 2em; /* Smaller font size on mobile */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stack footer content */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar ul {
+    gap: 5px; /* Even smaller gap on extra small screens */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Even smaller font size for very small screens */
+  }
 }
