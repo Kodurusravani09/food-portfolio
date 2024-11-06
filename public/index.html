@@ -16,7 +16,8 @@
     <nav class="navbar">
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
-        <li><a href="login.html">Login</a></li>
+        <!-- <li><a href="login.html">Login</a></li> -->
+        <li><a href="#" id="openLoginModal">Login</a></li>
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">Cart</a></li>
         <li><a href="Signup.html">Sign up</a></li>
@@ -33,6 +34,24 @@
       <h1>Food Portfolio</h1>
       <p>Discover a world of flavors and indulge in a variety of cuisines curated just for you.</p>
       <div id="food-list" class="food-list"></div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Login</h1>
+        <form id="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br><br>
+
+          <button type="submit">Login</button>
+        </form>
+        <p id="login-message"></p>
+      </div>
     </div>
 
     <!-- Footer Section -->
